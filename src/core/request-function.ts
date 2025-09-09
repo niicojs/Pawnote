@@ -1,4 +1,4 @@
-import type { SessionHandle } from "~/models";
+import { AccountKind, type SessionHandle } from "~/models";
 import forge from "node-forge";
 import pako from "pako";
 import { AES } from "../api/private/aes";
@@ -37,6 +37,17 @@ export class RequestFN {
 
     const order = this.generateOrder();
     const url = new URL(`${this.session.information.url}/appelfonction/${this.session.information.accountKind}/${this.session.information.id}/${order}`);
+
+    const properties = apiProperties(this.session);
+    if (this.session?.user && this.data?.[properties.signature]) {
+      if (this.session.information.accountKind === AccountKind.PARENT) {
+        const kid = this.session.userResource;
+        this.data[properties.signature].membre = {
+          N: kid?.id,
+          G: kid?.kind
+        };
+      }
+    }
 
     if (!this.session.information.skipCompression) {
       this.compress();
