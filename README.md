@@ -1,5 +1,10 @@
 <img alt="Pawnote: A purrfect API wrapper for PRONOTE" src=".github/assets/banner.svg" width="100%" />
 
+## WARNING  
+**This is a fork from the orginal library describe below to allow parent api (i.e. login and see your kid data)**
+
+## ORIGINAL README BELOW
+
 _This library **is not** affiliated with [Index-Education](https://www.index-education.com/) or [PRONOTE](https://www.index-education.com/fr/logiciel-gestion-vie-scolaire.php) in any way._
 
 ## What is "PRONOTE" ?

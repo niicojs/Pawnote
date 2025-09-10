@@ -1,7 +1,7 @@
 {
-  "name": "pawnote",
+  "name": "@niicojs/pawnote",
   "version": "1.6.1",
-  "description": "A purrfect API wrapper for PRONOTE.",
+  "description": "(fork) A purrfect API wrapper for PRONOTE.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LiterateInk/Pawnote.js.git"
