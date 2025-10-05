@@ -1,6 +1,6 @@
 {
   "name": "@niicojs/pawnote",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "(fork) A purrfect API wrapper for PRONOTE.",
   "repository": {
     "type": "git",
